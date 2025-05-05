@@ -1,0 +1,167 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="src/style.css">
+    <title>Eco-Responsabilite</title>
+</head>
+<body>
+    <header>
+        <h1>Eco-responsabilité numérique</h1>
+        <nav>
+            <a href="#Informations">Informations</a>
+            <a href="#Codes">Eléments de codes</a>
+            <a href="#Sources">Sources</a>
+        </nav>
+    </header>
+    <main>
+        <h2 id="Informations">Informations</h2>
+        <h3>Impact du numérique</h3>
+        <li>En 2022, le secteur numérique représentait 4,4 % de l'empreinte carbone de la France, soit 29,5 MtCO₂e, une augmentation notable par rapport aux années précédentes.</li>
+        <li>Au niveau mondial, les centres de données sont responsables d'environ 2 % des émissions de gaz à effet de serre (GES), un niveau comparable à celui du transport aérien.</li>
+        <h3>Consommation énergétique des datacenters</h3>
+        <li>Les datacenters consomment actuellement 2 % de l'énergie mondiale.</li>
+        <li>En France, ils pourraient représenter jusqu'à 6 % de la consommation d'électricité d'ici 2050.</li>
+        <img id="graphique" src="src/img/graphique-data-center.webp" alt="graphique" loading="lazy">
+        <h3>Émissions de CO₂ et empreinte carbone</h3>
+        <li>En 2022, les datacenters, l'intelligence artificielle (IA) et les cryptomonnaies ont consommé environ 460 TWh d'électricité, soit près de 2 % de la demande mondiale totale d'électricité.</li> 
+        <li>En France, les centres de données représentent environ 50 % de l'empreinte carbone du secteur informatique.</li>
+        <h3>Cycle de vie du matériel et déchets électroniques</h3>
+        <li>La fabrication de matériel informatique représente 70 à 90 % de son impact environnemental total.</li>
+        <li>En 2021, 57,4 millions de tonnes de déchets électroniques ont été générés dans le monde, avec seulement 17,4 % recyclés officiellement.</li>
+        <h3>Refroidissement et efficacité énergétique</h3>
+        <li>Les systèmes de refroidissement peuvent représenter jusqu'à 50 % de la consommation énergétique d'un datacenter.</li>
+        <li>L'indicateur PUE (Power Usage Effectiveness) mesure l'efficacité énergétique des datacenters, avec une valeur idéale de 1.</li>
+        <h3>Projections et tendances futures</h3>
+        <li>La demande mondiale d'électricité des datacenters pourrait doubler d'ici 2026, atteignant jusqu'à 1 050 TWh, soit l'équivalent de la consommation de pays comme l'Allemagne.</li> 
+        <li>En France, la consommation des datacenters pourrait atteindre 28 TWh d'ici 2035, voire 80 TWh si tous les projets en cours sont réalisés.</li>
+        <h3>Pistes de réduction de l'impact environnemental</h3>
+        <li>Optimisation énergétique : amélioration de l'efficacité des équipements et des systèmes de refroidissement.</li>
+        <li>Énergies renouvelables : utilisation accrue de sources d'énergie propres pour alimenter les datacenters.</li>
+        <li>Écoconception : conception de logiciels et de matériels plus sobres en énergie.</li>
+        <li>Allongement de la durée de vie : réduction du renouvellement fréquent des équipements.</li>
+        <li>Sensibilisation : éducation des utilisateurs aux pratiques numériques responsables.</li>
+        <h2 id="Codes">Eléments de codes</h2>
+        <h3>Images</h3>
+        <p>Pour les images il faut utiliser le bon format
+        Les redimensionner avant de les intégrer, elles n'ont pas besoin d'être plus grande que la taille à laquelle elles seront affiché.
+        Les compresser pour qu'elles soient moins lourdes sans perte de qualités.
+        Les chargés de manière intelligente avec un loading="lazy" dans nos balises img par exemple, et évitez les carousels ou les images de fond sans intérêt.
+        Réutiliser un maximum les mêmes images sur plusieurs pages et favoriser un maximum les sprites SVG ou librairies d'icônes (comme Feather, Heroicons).</p>
+        <table>
+            <thead>
+                <tr>
+                    <th>Type d'image</th>
+                    <th>Format recommandé</th>
+                </tr>
+            </thead>
+            <tbody>
+                <tr>
+                    <td>Icônes, logos, graphiques vectoriels</td>
+                    <td>SVG</td>
+                </tr>
+                <tr>
+                    <td>Images avec transparence</td>
+                    <td>WebP ou PNG (si WebP non supporté)</td>
+                </tr>
+                <tr>
+                    <td>Photos, illustrations</td>
+                    <td>WebP (ou JPEG si nécessaire)</td>
+                </tr>
+            </tbody>
+        </table>
+        <pre><code>
+&lt;!-- Mauvais : PNG non compressé de 5MB, inutilement grand --&gt;
+&lt;img src="banniere-1920x1080.png" width="400" height="300" /&gt;
+                
+&lt;!-- Mauvais : pas de lazy loading --&gt;
+        </code></pre>
+        <h3>Utilisation d'un design minimaliste et léger</h3>
+        <p>Simplification de la structure HTML : Un code HTML épuré et minimal réduit la taille des pages et améliore les performances. Moins de balises inutiles ou superflues diminuent le poids des pages.
+        Suppression des animations inutiles : Les animations CSS peuvent entraîner une charge supplémentaire sur le processeur. Limitez leur usage, surtout celles qui nécessitent un rendu continu, comme les animations complexes ou les transitions de grande ampleur.</p>
+        <pre><code>
+&lt;!-- Mauvais --&gt;
+&lt;div class="header"&gt;Bienvenue&lt;/div&gt;
+                
+&lt;!-- Bon --&gt;
+&lt;header&gt;Bienvenue&lt;/header&gt;
+        </code></pre>
+        <h3>Optimisation des fichiers CSS</h3>
+        <p>Minification des fichiers CSS : Compressez et minifiez vos fichiers CSS pour réduire leur taille. Cela permet de diminuer le temps de chargement des pages et la consommation d'énergie.
+        Éviter les bibliothèques lourdes : N'incluez que les bibliothèques dont vous avez réellement besoin, ou préférez des versions allégées.</p>
+        <pre><code>
+/* Mauvais */
+h1 {
+    color: black;
+}
+h2 {
+    color: black;
+}
+            
+/* Bon */
+h1, h2 {
+    color: black;
+}
+        </code></pre>
+        <h3>Responsivité optimisée pour les appareils mobiles</h3>
+        <p>Responsive design : Assurez-vous que votre site soit adapté aux mobiles avec un design fluide et des points de rupture (media queries) pour s'adapter à toutes les tailles d'écran. Cela réduit l'impact en optimisant les ressources pour les différents appareils (ordinateurs de bureau, tablettes, smartphones).</p>
+    </main>
+    <footer>
+        <div class="column">
+            <h3 id="Sources">Sources institutionnelles et publiques</h3>
+            <ul>
+                <li><a href="https://www.ademe.fr">ADEME (Agence de la transition écologique)</a>
+                Données sur l'empreinte carbone du numérique en France.</li>
+
+                <li>a href="https://www.notre-environnement.gouv.fr">Ministère de la Transition écologique - Notre-environnement.gouv.fr</href>
+                Rapport 2022 sur les impacts environnementaux du numérique.</li>
+
+                <li><a href="https://www.iea.org">IEA (International Energy Agency)</a>
+                Chiffres sur la consommation énergétique mondiale des datacenters.</li>
+            </ul>
+            <h3>Sources spécialisées et sectorielles</h3>
+            <ul>
+                <li><a href="https://theshiftproject.org">The Shift Project</a>
+                Études sur la sobriété numérique, la croissance de la demande énergétique.</li>
+
+                <li><a href="https://dcmag.fr">DCmag (Data Center Magazine)</a>
+                Informations sur la consommation mondiale des datacenters et leur évolution future.</li>
+
+                <li><a href="https://www.connaissancedesenergies.org">Connaissance des Énergies</a>
+                Données sur les usages électriques liés au numérique.</li>
+
+                <li><a href="https://www.lemagit.fr">Le MagIT</a>
+                Focus sur l'empreinte carbone des datacenters en France.</li>
+
+                <li><a href="https://solutions.acciona-energia.fr">ACCIONA Energía</a>
+                Éléments sur la consommation électrique des datacenters en France.</li>
+
+                <li><a href="https://www.lemonde.fr/economie">Le Monde.fr (section Économie)</a>
+                Projections sur la consommation future des datacenters.</li>
+            </ul>
+        </div>
+        <div class="column">
+                <h3>Sources numériques et outils en ligne</h3>
+            <ul>
+                <li><a href="https://www.ecoindex.fr">EcoIndex.fr</a>
+                Évaluation de l'impact environnemental des sites web.</li>
+
+                <li><a href="http://ecometer.org">Ecometer.org</a>
+                Outil d'analyse environnementale des services numériques.</li>
+            </ul>
+            <h3>Contenu audiovisuel</h3>
+            <ul>
+                <li><a href="https://www.youtube.com/watch?v=xL9Uy9Bjb3w">YouTube - Vidéo sur l'impact du numérique</a>
+                Vidéo explicative utilisée pour illustrer certains impacts (refroidissement, usage du cloud, etc.).</li>
+            </ul>
+            
+                <h3>Références encyclopédiques</h3>
+            <ul>
+                <li><a href="https://fr.wikipedia.org">Wikipédia - Divers articles techniques et environnementaux</a>
+                Références complémentaires sur PUE, datacenters, consommation électrique, etc.</li>
+            </ul>
+        </div>
+    </footer>    
+</body>
+</html>
