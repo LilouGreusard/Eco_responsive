@@ -8,12 +8,15 @@ body{
 
 header{
     background-color: rgb(150, 202, 250);
+    height: 15vh;
 }
 
 h1{
     text-align: center;
     font-size: 5vh;
     color:rgb(255, 109, 36);
+    margin:0;
+    margin-bottom: 10px;
 }
 
 h2{
